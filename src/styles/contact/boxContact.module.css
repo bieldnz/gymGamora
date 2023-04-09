@@ -1,0 +1,32 @@
+.boxContact{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.boxContact svg{
+    color: #d5283a;
+    font-size: 6vh;
+}
+.boxContact h3{
+    color: #d5283a;
+    font-size: 2vh;
+    margin-top: 5px;
+}
+.boxContact p{
+    color: white;
+    font-size: 2vh;
+    padding-left: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 920px){
+    .boxContact{
+        border: none !important;
+        width: 100%;
+    }
+}

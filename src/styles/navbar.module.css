@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Sassy+Frass&family=Ubuntu:wght@300;400&display=swap');
+
+.brand{
+    width: 20px;
+    min-width: 132px;
+    height: auto;
+}
+.brand img{
+    width: 100%;
+    height: 100%;
+}
+.navAuto{
+    margin-right: 0 !important;
+    justify-content: center;
+    width: 100%;
+    gap: 5%;
+}
+.navAuto a{
+    color: #d5283a !important;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 317px;
+    display: flex;
+    justify-content: center;
+};
+.navDrop{
+    color: #d5283a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.navDrop a{
+    text-decoration: none;
+}
+.navbar{
+    display: flex;
+    margin: 0;
+}
+.myTitleStyle a
+{
+    color: #d5283a !important;
+    text-decoration: none;
+}
+.collapseToggle svg {
+    color: red;
+    font-size: 4vh;
+}
+.navbar button{
+    border: 2px solid #d5283a;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.navbar button:focus{
+    box-shadow: none;
+}
+.navLink  div{
+    height: 100%;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 768px) {
+    .navAuto a{
+        border-bottom: 2px solid #d5283a;
+        padding-bottom: 5px;
+        padding-top: 0;
+    }
+    .myTitleStyle{
+        width: 100%;
+        max-width: 317px;
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        text-decoration: none !important;
+    }
+    .myTitleStyle a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+}

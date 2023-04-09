@@ -1,0 +1,51 @@
+.allPlans{
+    padding: 30px;
+    width: 100%;
+    gap: 500px;
+    position: relative;
+}
+.allPlans h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.allPlans div:nth-child(3){
+    display: flex;
+    justify-content: start;
+    z-index: 4;
+    width: 100%;
+}.allPlans div:nth-child(4){
+    display: flex;
+    justify-content: end;
+    z-index: 3;
+    width: 100%;
+}
+.allPlans div:nth-child(5){
+    display: flex;
+    justify-content: start;
+    z-index: 30;
+    width: 100%;
+}
+.imgBackground{
+    position: absolute;
+    z-index: 1;
+    width: calc(100% - 60px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgBackground img{
+    min-height: 100vh;
+    max-height: 100vh;
+    max-width: 100%;
+    opacity: 0.2;
+}
+
+@media only screen and (max-width: 730px){
+    .allPlans div{
+        justify-content: center !important;
+    }
+}

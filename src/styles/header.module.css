@@ -1,0 +1,131 @@
+.allHeader{
+    width: 100%;
+    height: calc(100vh - 126px);
+    display: flex; 
+    flex-direction: row;
+}
+.esqHeader{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5% 0 5% 0;
+}
+.dirHeader{
+    width: 50%;
+    height: 100%;
+}
+.imgHeader{
+    width: 80%;
+    height: 100%;
+}
+.textContainer{
+    margin-left: 5%;
+}
+.tittleHeader{
+    width: fit-content;
+    color: white;
+    font-size: 4vh;
+    border-top: 1px solid #d5283a;
+    border-bottom: 1px solid #d5283a;
+    padding-bottom: 7px;
+    display: flex;
+    align-items: center;
+}
+.textHeader{
+    color: white;
+    font-size: 2vh;
+}
+.containerButtonsHeader{
+    width: 100%;
+    height: 100%;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 3%;
+    padding-left: 5%;
+}
+.redButtonHeader{
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid #d5283a;
+    border-radius: 20px;
+    background-color: #131416;
+    color: #d5283a;
+    padding: 5%;
+    font-size: 2vh;
+    transition: 0.5s;
+}
+.redButtonHeader:hover{
+    background-color: #d5283a;
+    color: #131416;
+}
+.whiteButtonHeader{
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: #131416;
+    padding: 5%;
+    transition: 0.5s;
+    color: white;
+    font-size: 2vh;
+}
+.whiteButtonHeader:hover{
+    background-color: white;
+    color: #131416;
+}
+.containerMotivation{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    margin-left: 5%;
+}
+.motivation{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #d5283a;
+    border-bottom: 1px solid #d5283a;
+    border-right: 1px solid #d5283a;
+    
+}
+@media only screen and (max-width: 860px){
+    .dirHeader{
+        width: 0;
+    }
+    .esqHeader{
+        width: 100%;
+    }
+    .containerMotivation{
+        margin-left: 0;
+        justify-content: space-between;
+        padding: 0 20% 0 20%;
+    }
+}
+@media only screen and (max-width: 470px){
+    .redButtonHeader{
+        margin-bottom: 5px;
+    }
+    .containerButtonsHeader{
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0;
+        padding-right: 0;
+    }
+    .containerMotivation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .allHeader{
+        height: auto;
+    }
+}

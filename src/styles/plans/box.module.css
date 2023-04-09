@@ -1,0 +1,66 @@
+.boxPlans{
+    min-width: 850px;
+    width: 70%;
+    height: 33%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 50px 10px 50px;
+    margin-bottom: 50px;
+    z-index: 2;
+}
+.img1Plans{
+    width: 40%;
+    height: 40%;
+    min-width: 266px; 
+    max-height: 200px;
+}
+.textPlans{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+.textPlans h1{
+    color: black;
+}
+.textPlans p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.textPlans button{
+    width: 200px;
+    height: fit-content;
+    margin: auto auto auto auto;
+    border: 2px solid gray;
+    background-color: white;
+    color: gray;
+    padding: 10px;
+    
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.textPlans button:hover{
+    background-color: gray;
+    color: white;
+}
+
+@media only screen and (max-width: 930px){
+    .boxPlans{
+        min-width: 100%;
+    }
+}
+@media only screen and (max-width: 730px){
+    .boxPlans{
+        flex-direction: column;
+        min-width: fit-content;
+        padding: 10px 0 10px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .textPlans{
+        padding: 0;
+    }
+}
